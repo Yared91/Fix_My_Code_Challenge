@@ -24,9 +24,9 @@ class Square():
         if kwargs:
             for key, value in kwargs.items():
                 setattr(self, key, value)
-            if 'width' in kwargs.keys() and self.height != self.width:
+            if 'width' in kwargs.keys() and self.height != kwargs['width']:
                 self.height = self.width
-            if 'height' in kwargs.keys() and self.width != self.height:
+            if 'height' in kwargs.keys() and self.width != kwargs['height']:
                 self.width = self.height
 
     def area(self):
@@ -35,11 +35,11 @@ class Square():
 
     def perimeter(self):
         """ Return perimeter of the square """
-        return (self.width * 2) + (self.height * 2)
+        return (self.width * 4) + (self.height * 4)
 
     def __str__(self):
         """ Return string representation """
-        return "{}/{}".format(self.width, self.height)
+        return "{}/{}".format(self.width, self.width)
 
 
 if __name__ == "__main__":
