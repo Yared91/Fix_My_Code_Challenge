@@ -43,7 +43,7 @@ class Square():
 
 
 if __name__ == "__main__":
-    s = Square(width=12, height=9)
+    s = Square(width = 12, height = 9)
     print(s)
     print(s.width)
     print(s.height)
