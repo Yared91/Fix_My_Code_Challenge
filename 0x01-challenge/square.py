@@ -7,13 +7,13 @@ Class Square Module
 class Square():
     """
     Attr:
-    width
-    height
+        width
+        height
     Methods:
-    __init__(self, *args, **kwargs)
-    area(self)
-    perimeter(self)
-    __str__(self)
+        __init__(self, *args, **kwargs)
+        area(self)
+        perimeter(self)
+        __str__(self)
     """
 
     width = 0
